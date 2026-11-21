@@ -1,0 +1,15 @@
+const newIssue = {
+    summary: summary.trim(),
+    description: description.trim(),
+    project: Number(project),
+    assignee: Number(assignee),
+    createdBy: Number(user?.userId || 1),
+    createdOn: null,      // Send null instead of ''
+    lastUpdated: null,    // Send null instead of ''
+    sprint: String(sprint),
+    storyPoint: Number(storyPoint),
+    tags: tags.trim(),
+    priority: priority,
+    status: backendStatus,
+    type: backendType
+};
